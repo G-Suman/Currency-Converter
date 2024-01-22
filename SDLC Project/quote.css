@@ -1,0 +1,102 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.wrapper1{
+  width: 790px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px 30px 25px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+}
+header, .content1 :where(i, p, span){
+  color: #202842;
+}
+.wrapper1 header{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+.wrapper1 .content1{
+  margin: 35px 0;
+}
+.content1 .quote-area1{
+  display: flex;
+  justify-content: center;
+}
+.quote-area1 i{
+  font-size: 15px;
+}
+.quote-area1 i:first-child{
+  margin: 3px 10px 0 0;
+}
+.quote-area1 i:last-child{
+  display: flex;
+  margin: 0 0 3px 10px;
+  align-items: flex-end;
+}
+.quote-area1 .quote{
+  font-size: 22px;
+  text-align: center;
+  word-break: break-all;
+}
+.content1 .author1{
+  display: flex;
+  font-size: 18px;
+  margin-top: 20px;
+  font-style: italic;
+  justify-content: flex-end;
+}
+.author1 span:first-child{
+  margin: -7px 5px 0 0;
+  font-family: monospace;
+}
+.wrapper1 .buttons1{
+  border-top: 1px solid #ccc;
+}
+.buttons1 .features1{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.features1 ul{
+  display: flex;
+}
+.features1 ul li{
+  margin: 0 5px;
+  height: 47px;
+  width: 47px;
+  display: flex;
+  cursor: pointer;
+  color: #5372F0;
+  list-style: none;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #5372F0;
+  transition: all 0.3s ease;
+}
+.features1 ul li:first-child{
+  margin-left: 0;
+}
+ul li:is(:hover, .active){
+  color: #fff;
+  background: #5372F0;
+}
+ul .speech.active{
+  pointer-events: none;
+}
+.buttons1 button{
+  border: none;
+  color: #fff;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 13px 22px;
+  border-radius: 30px;
+  background: #5372F0;
+}
+.buttons1 button.loading{
+  opacity: 0.7;
+  pointer-events: none;
+}
